@@ -1,3 +1,5 @@
+![Spooky Slots](spooky_slots.png)
+
 # _Spooky-Slots_
 
 #### _An interactive web app that recreates a pull slot machine game._
@@ -10,9 +12,9 @@ _An interactive web app that allows a user to spin the reels of a virtual slot m
 winnings and how many pulls are allowed. Incorporates shuffling image effects to simulate spinning slots. Interactive
 elements created almost entirely in JavaScript._
 
-## Setup/Installation Requirements
+##GitHub Pages Link
 
-* _Viewing the page is easily accomplished by opening the index.html file in any internet browser._
+http://adamcraig.github.io/spooky-slots
 
 ## Known Bugs
 
@@ -21,28 +23,18 @@ _On mobile devices (which take longer to load and thus are not properly synced w
 ## Support and contact details
 
 _For all issues and support, please contact:
-Adam Craig at ajcraig@suffolk.edu
-Tommy Jones at tommyinseason@yahoo.com
-Nick Lyman at nick.lyman@gmail.com
-Ashley Maceli at ashley.maceli@gmail.com_
+* _Adam Craig at ajcraig@suffolk.edu_
+* _Tommy Jones at tommyinseason@yahoo.com_
+* _Nick Lyman at nick.lyman@gmail.com_
+* _Ashley Maceli at ashley.maceli@gmail.com_
 
 ## Technologies Used
 
 _HTML, CSS, Bootstrap, JavaScript, jQuery_
 
-##GitHub Pages Link
-
-_http://adamcraig.github.io/spooky-slots_
-
-_http://tommyinseason.github.io/spooky-slots_
-
-_http://nicklyman.github.io/spooky-slots_
-
-_http://ashleyraymaceli.github.io/spooky-slots_
-
 ### License
 
-_The MIT License (MIT)
+The MIT License (MIT)
 
 Copyright (c) [2016] [Adam Craig, Tommy Jones, Nick Lyman, Ashley Maceli]
 
@@ -62,4 +54,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE._
+SOFTWARE.
