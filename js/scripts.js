@@ -1,13 +1,21 @@
 // Business Logic
 
 function Machine () {
-  this.symbols = ["skull", "candy", "ghost", "bat", "witch", "pumpkin", "werewolf", "zombie", "vampire", "black cat", "grim reaper"];
+  //this.symbols = ["skull", "candy", "ghost", "bat", "witch", "pumpkin", "werewolf", "zombie", "vampire", "black cat", "grim reaper"];
 
-  this.reel1 = ["skull", "candy", "ghost", "bat", "witch", "pumpkin", "werewolf", "zombie", "vampire", "black cat", "grim reaper", "candy", "candy", "black cat", "black cat", "bat", "bat", "ghost", "ghost"];
+  //this.reel1 = ["skull", "candy", "ghost", "bat", "witch", "pumpkin", "werewolf", "zombie", "vampire", "black cat", "grim reaper", "candy", "candy", "black cat", "black cat", "bat", "bat", "ghost", "ghost"];
 
-  this.reel2 = ["skull", "candy", "ghost", "bat", "witch", "pumpkin", "werewolf", "zombie", "vampire", "black cat", "grim reaper", "candy", "black cat", "witch", "witch", "ghost", "ghost", "bat", "bat"];
+  //this.reel2 = ["skull", "candy", "ghost", "bat", "witch", "pumpkin", "werewolf", "zombie", "vampire", "black cat", "grim reaper", "candy", "black cat", "witch", "witch", "ghost", "ghost", "bat", "bat"];
 
-  this.reel3 = ["skull", "candy", "ghost", "bat", "witch", "pumpkin", "werewolf", "zombie", "vampire", "black cat", "grim reaper", "skull", "skull", "skull", "pumpkin", "pumpkin", "candy", "black cat", "witch", "zombie", "bat", "bat", "ghost", "ghost"];
+  //this.reel3 = ["skull", "candy", "ghost", "bat", "witch", "pumpkin", "werewolf", "zombie", "vampire", "black cat", "grim reaper", "skull", "skull", "skull", "pumpkin", "pumpkin", "candy", "black cat", "witch", "zombie", "bat", "bat", "ghost", "ghost"];
+
+  this.symbols = ["cinto", "candy", "vp", "vb", "bll", "pumpkin", "ps", "zi", "mc", "black cat", "odg"];
+
+  this.reel1 = ["cinto", "candy", "vp", "vb", "bll", "pumpkin", "ps", "zi", "mc", "black cat", "odg", "candy", "candy", "black cat", "black cat", "vb", "vb", "vp", "vp"];
+
+  this.reel2 = ["cinto", "candy", "vp", "vb", "bll", "pumpkin", "ps", "zi", "mc", "black cat", "odg", "candy", "black cat", "bll", "bll", "vp", "vp", "vb", "vb"];
+
+  this.reel3 = ["cinto", "candy", "vp", "vb", "bll", "pumpkin", "ps", "zi", "mc", "black cat", "odg", "skull", "cinto", "cinto", "pumpkin", "pumpkin", "candy", "black cat", "bll", "zi", "vb", "vb", "vp", "vp"];
 
   // this.reel1 = ["skull"];
   // this.reel2 = ["skull"];
@@ -93,72 +101,72 @@ Machine.prototype.winningCombo = function(reel1Result, reel2Result, reel3Result,
       winningReel.push(reel3Result);
 
       for (i = 0; i < winningReel.length; i++) {
-        if (winningReel[0] === "grim reaper" && winningReel[1] === "grim reaper" && winningReel[2] === "grim reaper")  {
+        if (winningReel[0] === "odg" && winningReel[1] === "odg" && winningReel[2] === "odg")  {
            newPlayer.bankRoll += 10000;
-           winType = "You won $10000!";
+           winType = "Robaste $10000!";
          setTimeout(function() { grimReaper.play(); }, 7300);
            return winType;
-        } else if (winningReel[0] === "zombie" && winningReel[1] === "zombie" && winningReel[2] === "zombie")  {
+        } else if (winningReel[0] === "zi" && winningReel[1] === "zi" && winningReel[2] === "zi")  {
             newPlayer.bankRoll += 1000;
-            winType = "You won $1000!";
+            winType = "Robaste $1000!";
             setTimeout(function() { zombie.play(); }, 7300);
             return winType;
-        } else if (winningReel[0] === "vampire" && winningReel[1] === "vampire" && winningReel[2] === "vampire")  {
+        } else if (winningReel[0] === "mc" && winningReel[1] === "mc" && winningReel[2] === "mc")  {
             newPlayer.bankRoll += 500;
-            winType = "You won $500!";
+            winType = "Robaste $500!";
             setTimeout(function() { vampire.play(); }, 7300);
             return winType;
-        } else if (winningReel[0] === "werewolf" && winningReel[1] === "werewolf" && winningReel[2] === "werewolf") {
+        } else if (winningReel[0] === "ps" && winningReel[1] === "ps" && winningReel[2] === "ps") {
             newPlayer.bankRoll += 250;
-            winType = "You won $250!";
+            winType = "Robaste $250!";
             setTimeout(function() { devil.play(); }, 7300);
             return winType;
-        } else if (winningReel[0] === "bat" && winningReel[1] === "bat" && winningReel[2] === "bat") {
+        } else if (winningReel[0] === "vb" && winningReel[1] === "vb" && winningReel[2] === "vb") {
             newPlayer.bankRoll += 175;
-            winType = "You won $175!";
+            winType = "Robaste $175!";
             setTimeout(function() { voodoo.play(); }, 7300);
             return winType;
-        } else if (winningReel[0] === "ghost" && winningReel[1] === "ghost" && winningReel[2] === "ghost")  {
+        } else if (winningReel[0] === "vp" && winningReel[1] === "vp" && winningReel[2] === "vp")  {
             newPlayer.bankRoll += 100;
-            winType = "You won $100!";
+            winType = "Robaste $100!";
             setTimeout(function() { ghost.play(); }, 7300);
             return winType;
         } else if (winningReel[0] === "witch" && winningReel[1] === "witch" && winningReel[2] === "witch")  {
             newPlayer.bankRoll += 64;
-            winType = "You won $64!";
+            winType = "Robaste $64!";
             setTimeout(function() { witch.play(); }, 7300);
             return winType;
         } else if (winningReel[0] === "black cat" && winningReel[1] === "black cat" && winningReel[2] === "black cat")  {
             newPlayer.bankRoll += 36;
-            winType = "You won $36!";
+            winType = "Robaste $36!";
             setTimeout(function() { blackCat.play(); }, 7300);
             return winType;
         } else if (winningReel[0] === "candy" && winningReel[1] === "candy" && winningReel[2] === "candy")  {
             newPlayer.bankRoll += 18;
-            winType = "You won $18!";
+            winType = "Robaste $18!";
             setTimeout(function() { candy.play(); }, 7300);
             return winType;
         } else if (winningReel[0] === "pumpkin" && winningReel[1] === "pumpkin" && winningReel[2] === "pumpkin")  {
             newPlayer.bankRoll += 12;
-            winType = "You won $12!";
+            winType = "Robaste $12!";
             setTimeout(function() { pumpkin.play(); }, 7300);
             return winType;
         } else if ((winningReel[0] === "pumpkin" && winningReel[1] === "pumpkin") || (winningReel[0] === "pumpkin" && winningReel[2] === "pumpkin") || (winningReel[1] === "pumpkin" && winningReel[2] === "pumpkin")) {
             newPlayer.bankRoll += 4;
-            winType = "You won $4!";
+            winType = "Robaste $4!";
             setTimeout(function() { pumpkin.play(); }, 7300);
             return winType;
         } else if ((winningReel[0] === "pumpkin") || (winningReel[1] === "pumpkin") || (winningReel[2] === "pumpkin")) {
             newPlayer.bankRoll += 2;
-            winType = "You won $2!";
+            winType = "Robaste $2!";
             setTimeout(function() { pumpkin.play(); }, 7300);
             return winType;
         } else if (winningReel[0] === "skull" && winningReel[1] === "skull" && winningReel[2] === "skull") {
             newPlayer.bankRoll -= (Math.floor(newPlayer.bankRoll * 0.9));
             setTimeout(function() { skull.play(); }, 7300);
-            return winType = "You just lost 90% of your bank roll. Go grab yourself a free coffee from the lounge!";
+            return winType = "Cuidado con el Cintarazo! te hizo perder el 90 % de tus robos";
         } else {
-            winType = "No winning matches. Spin again.";
+            winType = "Ningún robo perpetrado. Pero tranquilo la fiscalía no hace nada. Volvé a girar.";
 
             var randomLoss = Math.floor(Math.random() * 6);
 
