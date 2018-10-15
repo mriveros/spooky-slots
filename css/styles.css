@@ -162,9 +162,10 @@ img {
 }
 
 .slotImg {
-  height: 45px;
-  width: 45px;
+  height: auto;
+  width: 60px;
   display: inline;
+  padding: 2px 2px 2px;
 }
 
 .container {
