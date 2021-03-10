@@ -1,6 +1,6 @@
 ![Spooky Slots](spooky_slots.png)
 
-# _Spooky-Slots_
+# _Spooky-Slots Paraguayan Version_
 
 #### _An interactive web app that recreates a pull slot machine game._
 
