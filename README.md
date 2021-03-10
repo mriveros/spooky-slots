@@ -4,30 +4,6 @@
 
 #### _An interactive web app that recreates a pull slot machine game._
 
-#### By _**Adam Craig, Tommy Jones, Nick Lyman, and Ashley Maceli**_
-
-## Description
-
-_An interactive web app that allows a user to spin the reels of a virtual slot machine. Stores a coinpurse that dictates
-winnings and how many pulls are allowed. Incorporates shuffling image effects to simulate spinning slots. Interactive
-elements created almost entirely in JavaScript._
-
-##GitHub Pages Link
-
-http://adamcraig.github.io/spooky-slots
-
-## Known Bugs
-
-_On mobile devices (which take longer to load and thus are not properly synced with our timer functions), the slots usually do not show the proper images (i.e images indicate that a user won when they really lost, etc.)._
-
-## Support and contact details
-
-_For all issues and support, please contact:
-* _Adam Craig at ajcraig@suffolk.edu_
-* _Tommy Jones at tommyinseason@yahoo.com_
-* _Nick Lyman at nick.lyman@gmail.com_
-* _Ashley Maceli at ashley.maceli@gmail.com_
-
 ## Technologies Used
 
 _HTML, CSS, Bootstrap, JavaScript, jQuery_
